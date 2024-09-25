@@ -144,7 +144,7 @@ const Home:React.FC = () => {
 
         // Only call getSpeech if voices are loaded
         if (voices && voices.length > 0) {
-            getSpeech(`${currentNumber}번 고객님 주문하신 음료가 준비 되었습니다.`, voices);
+            getSpeech(`${orderNumber}번 고객님 주문하신 음료가 준비 되었습니다.`, voices);
         } else {
             console.error("No voices available or voices not loaded yet.");
         }
